@@ -1,22 +1,35 @@
-/* Carousel container and welcome section */
+/* Contenedor global con sombra */
+.global-container {
+    background-color: #f9f9f9; /* Color de fondo que abarcará todo */
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra aplicada al contenedor global */
+    margin: 20px auto;
+    border-radius: 20px;
+    max-width: 1200px; /* Opcional, para limitar el ancho máximo del contenido */
+}
+
+
+/* Ajuste del contenido dentro del contenedor */
 .main-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 40px;
-    background-color: #f9f9f9;
-    height: 1000px;
-    border-radius: 20px;  /* Bordes redondeados para todo el contenedor */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras sutiles */
+    align-items: flex-start;
+    /* padding y otras propiedades del contenido ya están en global-container */
 }
 
-/* Carousel-container styles */
+/* Asegura que el main tenga una altura que permita añadir más contenido */
+main {
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos toda la pantalla */
+}
+
+/* Elimina la altura fija */
 .carousel-container {
-    width: 200%;
-    height: 50%;
+    width: 100%;
     position: relative;
     overflow: hidden;
+    padding-top: 20px; /* Ajusta el valor según el espacio que quieras */
 }
+
 
 /* Carousel styles */
 .carousel {
@@ -88,9 +101,18 @@
     margin-left: 530px; /* Mover más a la derecha */
 }
 
+.additional-content {
+    margin-top: 40px;
+}
+
 /* Body reset */
 body {
     font-family: 'Arial', sans-serif;
+}
+
+.final-section {
+    margin-top: 40px;
+    /* Ya no necesitas sombra aquí porque la tiene el contenedor global */
 }
 
 /* Header styles */
