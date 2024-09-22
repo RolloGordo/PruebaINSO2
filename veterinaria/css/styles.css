@@ -1,17 +1,19 @@
-/* Main content section */
+/* Carousel container and welcome section */
 .main-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px;
     background-color: #f9f9f9;
-    height: 400px;
+    height: 1000px;
+    border-radius: 20px;  /* Bordes redondeados para todo el contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras sutiles */
 }
 
 /* Carousel-container styles */
 .carousel-container {
-    width: 45%;
-    height: 100%;
+    width: 200%;
+    height: 50%;
     position: relative;
     overflow: hidden;
 }
@@ -50,27 +52,40 @@
 
 /* Welcome text styles */
 .welcome-text {
-    width: 45%;  /* Ajustamos el ancho para que no sea muy largo */
+    width: 45%;
     padding: 20px;
-    text-align: right;  /* Alineamos el texto a la derecha */
-    margin-right: 30px;  /* Un pequeño margen para que no esté pegado a los bordes */
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Tipografía caricaturesca */
+    text-align: center; 
+    margin-right: 30px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
 }
 
 .welcome-text h1 {
-    font-size: 36px;
+    font-size: 50px;
     color: #333;
-    margin-bottom: 15px;
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Aplicar tipografía también al título */
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
 }
 
 .welcome-text p {
     font-size: 18px;
     color: #666;
-    line-height: 1.6;
-    max-width: 350px;  /* Limitar el ancho del párrafo para mayor consistencia */
-    text-align: justify;  /* Justificar el texto para una apariencia más limpia */
+    line-height: 1.8;
+    max-width: 800px;  /* Limitar el ancho del párrafo para mayor consistencia */
+    text-align: right;
+    margin-left: 450px; 
     font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Aplicar tipografía al párrafo */
+}
+
+/* Escalera de texto */
+.stair-1 {
+    margin-left: 0; /* Primer palabra sin margen adicional */
+}
+
+.stair-2 {
+    margin-left: 250px; /* Mover un poco a la derecha */
+}
+
+.stair-3 {
+    margin-left: 530px; /* Mover más a la derecha */
 }
 
 /* Body reset */
@@ -81,8 +96,11 @@ body {
 /* Header styles */
 header {
     background-color: white;
-    padding: 10px 30px; /* Reducir padding para hacer la barra menos alta */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más ligera */
+    padding: 10px 30px; /* Mantener barra más sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra más fuerte */
+    border-radius: 0 0 20px 20px; /* Bordes inferiores redondeados */
+    position: relative;  /* Asegurar que la sombra se vea bien */
+    z-index: 10;  /* Asegurar que el header esté sobre otros elementos */
 }
 
 /* Navigation container */
